@@ -1,0 +1,166 @@
+RIVERMEDE TRANSIT
+
+1. Bus routes
+2. Train routes
+3. Plan a journey
+4. Demo day (24 passengers)
+5. My own passengers
+0. Exit
+
+Choose (0-5): 1
+
+BUS ROUTES (they all go both ways)
+
+  Central Station  to  University       10 min
+  Central Station  to  Old Town          7 min
+  Tech Park        to  Hilltop          14 min
+  Tech Park        to  Riverside Mall   12 min
+  North Market     to  Harbor           16 min
+  Harbor           to  Riverside Mall    8 min
+  University       to  Riverside Mall    6 min
+  University       to  Sunset Heights   13 min
+  Old Town         to  Riverside Mall    5 min
+  Old Town         to  Greenwood         9 min
+  Greenwood        to  Hilltop          11 min
+  Greenwood        to  Sunset Heights   10 min
+
+Press Enter to go back to the menu.
+
+RIVERMEDE TRANSIT
+
+1. Bus routes
+2. Train routes
+3. Plan a journey
+4. Demo day (24 passengers)
+5. My own passengers
+0. Exit
+
+Choose (0-5): 2
+
+TRAIN ROUTES (they all go both ways)
+
+  Central Station  to  Airport          15 min
+  Central Station  to  Tech Park         8 min
+  Central Station  to  Harbor           12 min
+  Tech Park        to  North Market      6 min
+  Tech Park        to  East Bridge      10 min
+  East Bridge      to  Harbor            9 min
+
+Press Enter to go back to the menu.
+
+RIVERMEDE TRANSIT
+
+1. Bus routes
+2. Train routes
+3. Plan a journey
+4. Demo day (24 passengers)
+5. My own passengers
+0. Exit
+
+Choose (0-5): 3
+
+PLAN A JOURNEY
+
+  1. Central Station   2. Airport           3. Tech Park       
+  4. North Market      5. East Bridge       6. Harbor          
+  7. University        8. Old Town          9. Riverside Mall  
+ 10. Greenwood        11. Hilltop          12. Sunset Heights  
+
+Start stop (1-12, 0 = back): 10
+End stop (1-12, 0 = back): 3
+Time (1 = 07:00, 2 = 13:00, 3 = 18:00, 4 = 22:00, 0 = back): 1
+
+Greenwood to Tech Park at 07:00 Morning Peak
+
+Fastest way: 24 min, 3 rides
+  1. BUS    Greenwood        to  Old Town          9 min
+  2. BUS    Old Town         to  Central Station   7 min
+  3. TRAIN  Central Station  to  Tech Park         8 min
+
+Way with fewest rides: 25 min, 2 rides
+  1. BUS    Greenwood        to  Hilltop          11 min
+  2. BUS    Hilltop          to  Tech Park        14 min
+
+Work done: DFS tried 29 journeys in 257 steps. BFS took 48 steps.
+
+Press Enter to go back to the menu.
+
+RIVERMEDE TRANSIT
+
+1. Bus routes
+2. Train routes
+3. Plan a journey
+4. Demo day (24 passengers)
+5. My own passengers
+0. Exit
+
+Choose (0-5): 4
+
+DEMO DAY: 24 passengers
+
+07:00 Morning Peak
+   1. Greenwood to Tech Park: 24 min, BUS to Central Station, then TRAIN to Tech Park
+   2. Sunset Heights to Central Station: 23 min, BUS to Central Station
+   3. Hilltop to University: 31 min, BUS to University
+   4. Airport to Old Town: 22 min, TRAIN to Central Station, then BUS to Old Town
+   5. Old Town to Tech Park: 15 min, BUS to Central Station, then TRAIN to Tech Park
+   6. Greenwood to Central Station: 16 min, BUS to Central Station
+   7. Riverside Mall to Tech Park: 12 min, BUS to Tech Park
+   8. Sunset Heights to University: 13 min, BUS to University
+
+13:00 Midday
+   9. Old Town to Riverside Mall: 5 min, BUS to Riverside Mall
+  10. Harbor to North Market: 16 min, BUS to North Market
+  11. University to Riverside Mall: 6 min, BUS to Riverside Mall
+  12. Central Station to Harbor: 12 min, TRAIN to Harbor
+  13. Airport to Central Station: 15 min, TRAIN to Central Station
+
+18:00 Evening Peak
+  14. Tech Park to Greenwood: 24 min, TRAIN to Central Station, then BUS to Greenwood
+  15. Central Station to Sunset Heights: 23 min, BUS to Sunset Heights
+  16. University to Hilltop: 31 min, BUS to Hilltop
+  17. Tech Park to Old Town: 15 min, TRAIN to Central Station, then BUS to Old Town
+  18. Central Station to Greenwood: 16 min, BUS to Greenwood
+  19. Tech Park to Riverside Mall: 12 min, BUS to Riverside Mall
+  20. University to Sunset Heights: 13 min, BUS to Sunset Heights
+  21. Old Town to Airport: 22 min, BUS to Central Station, then TRAIN to Airport
+
+22:00 Night
+  22. Harbor to Central Station: 12 min, TRAIN to Central Station
+  23. Riverside Mall to Old Town: 5 min, BUS to Old Town
+  24. Central Station to Tech Park: 8 min, TRAIN to Tech Park
+
+RESULTS: ALGORITHM EFFICIENCY
+
+Work done at each time of day. One step is one stop visited or one route looked at.
+
+  Time of day          Passengers   BFS steps   DFS steps
+  07:00 Morning Peak            8         384        2882
+  13:00 Midday                  5         240        2022
+  18:00 Evening Peak            8         384        5220
+  22:00 Night                   3         144        1042
+  All day                      24        1152       11166
+
+Average for one search:
+
+  Search   Finds               Steps   Microseconds
+  BFS      fewest rides         48.0           0.14
+  DFS      fastest way         465.2           3.55
+
+BFS always takes 12 stops + 36 route checks = 48 steps. That is V + E.
+DFS tried 26.8 journeys for each passenger, so it takes more steps.
+Fastest ways average 16.3 min. Fewest rides ways average 16.5 min, slower for 4 of 24 passengers.
+
+Press Enter to go back to the menu.
+
+RIVERMEDE TRANSIT
+
+1. Bus routes
+2. Train routes
+3. Plan a journey
+4. Demo day (24 passengers)
+5. My own passengers
+0. Exit
+
+Choose (0-5): 0
+Goodbye!
