@@ -1,0 +1,13 @@
+# Build output
+/transit
+/transit.exe
+*.exe
+*.o
+*.out
+build/
+
+# Editors and OS files
+.vscode/
+.idea/
+.DS_Store
+Thumbs.db
