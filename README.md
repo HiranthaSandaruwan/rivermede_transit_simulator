@@ -7,8 +7,8 @@ A smart-city public transport simulator in plain C. It models the bus and train 
 made-up city as a graph, plans journeys with **BFS** and **DFS**, simulates a day of passengers,
 and **profiles both algorithms** by steps and by time.
 
-Group project for **IS2202 Advanced Data Structures and Algorithms**,
-University of Colombo School of Computing (Group 03).
+Project for **Advanced Data Structures and Algorithms**,
+University of Colombo School of Computing.
 
 ## Highlights
 
